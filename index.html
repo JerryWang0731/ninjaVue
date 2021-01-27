@@ -8,9 +8,8 @@
     
     <body>
         <div id="vue-app">
-            <a v-bind:href="movieUrl">linkName</a>
-            <h1>{{ greet("fuck") }}</h1>
-            <p>Hello, {{ name }}</p>
+            <p v-on:click="age += 1">Age, {{ age }}</p>
+            <button v-on:click="subtract()">s</button>
         </div>
     </body>
 
