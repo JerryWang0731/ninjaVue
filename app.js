@@ -1,30 +1,35 @@
 new Vue({
     el: "#vue-app",
     data: {
-        name: "jerry",
-        movieUrl: "https://www.youtube.com/",
-        movieUrlTag: '<a href="https://www.youtube.com/">good stuff</a>',
-        age: 87,
+        age: 18,
         x: 0,
         y: 0,
     },
     methods: {
-        greet: function(st){
-            return "Good " + st + ':'+ this.name;
+        triggerOther: function(){
+            alert('trigger other');
+            return 'other';
         },
-        subtract: function()
-        {
-            this.age--;
+        addX: function(){
+            console.log('trigger X');
+            return this.x + this.age;
         },
-        updateXY: function(event) {
-            this.x = event.clientX, 
-            this.y = event.clientY;
+        addY: function(){
+            console.log('trigger Y');
+            return this.y + this.age;
         },
-        say: function() {
-            alert('ninja');
-        },
-        keyup: function(){
-            console.log('hola');
-        }
+    },
+    computed: {
+        // addX: function(){
+        //     console.log('trigger X');
+        //     return this.x + this.age;
+        // },
+        // addY: function(){
+        //     console.log('trigger Y');
+        //     return this.y + this.age;
+        // },
+        // addXY: function(){
+        //     return this.x + this.y;
+        // }
     }
 });

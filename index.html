@@ -8,13 +8,13 @@
     
     <body>
         <div id="vue-app">
-            <!-- <p @click="age += 1">Age, {{ age }}</p>
-            <button v-on:dblclick="subtract">s</button>
-            <div v-on:mousemove="updateXY" class="canvas">{{ x }}, {{ y }}</div>
-            <a v-on:click.prevent="say" href="https://vuejs.org/">vue la</a> -->
-            <label>AAAA:</label>
-            <input type="text" v-on:keyup.ctrl.enter="keyup"/>
-
+            <h1>computed demo</h1>
+            <span>Age: {{ age }}</span>
+            <button v-on:click="x++">Add x</button>
+            <button v-on:click="y++">Add y</button>
+            <span>addX: {{ addX() }}</span>
+            <span>addY: {{ addY() }}</span>
+            <span>addXY: {{ triggerOther() }}</span>
         </div>
     </body>
     <script src="app.js"></script>
