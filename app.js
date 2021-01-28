@@ -16,9 +16,12 @@ new Vue({
         {
             this.age--;
         },
-        updateXY(event) {
+        updateXY: function(event) {
             this.x = event.clientX, 
             this.y = event.clientY;
+        },
+        say: function() {
+            alert('ninja');
         }
     }
 });
