@@ -5,6 +5,8 @@ new Vue({
         movieUrl: "https://www.youtube.com/",
         movieUrlTag: '<a href="https://www.youtube.com/">good stuff</a>',
         age: 87,
+        x: 0,
+        y: 0,
     },
     methods: {
         greet: function(st){
@@ -13,6 +15,10 @@ new Vue({
         subtract: function()
         {
             this.age--;
+        },
+        updateXY(event) {
+            this.x = event.clientX, 
+            this.y = event.clientY;
         }
     }
 });
