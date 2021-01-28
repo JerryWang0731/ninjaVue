@@ -8,8 +8,8 @@
     
     <body>
         <div id="vue-app">
-            <!-- <p v-on:click="age += 1">Age, {{ age }}</p>
-            <button v-on:click="subtract">s</button> -->
+            <p @click="age += 1">Age, {{ age }}</p>
+            <button v-on:dblclick="subtract">s</button>
             <div v-on:mousemove="updateXY" class="canvas">{{ x }}, {{ y }}</div>
         </div>
     </body>
