@@ -8,13 +8,14 @@
     
     <body>
         <div id="vue-app">
-            <p @click="age += 1">Age, {{ age }}</p>
+            <!-- <p @click="age += 1">Age, {{ age }}</p>
             <button v-on:dblclick="subtract">s</button>
             <div v-on:mousemove="updateXY" class="canvas">{{ x }}, {{ y }}</div>
+            <a v-on:click.prevent="say" href="https://vuejs.org/">vue la</a> -->
+            <label>AAAA:</label>
+            <input type="text" v-on:keyup.ctrl.enter="keyup"/>
 
-            <a v-on:click.prevent="say" href="https://vuejs.org/">vue la</a>
         </div>
     </body>
-
     <script src="app.js"></script>
 </html>

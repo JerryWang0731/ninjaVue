@@ -22,6 +22,9 @@ new Vue({
         },
         say: function() {
             alert('ninja');
+        },
+        keyup: function(){
+            console.log('hola');
         }
     }
 });
