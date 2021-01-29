@@ -7,16 +7,16 @@
     </head>
     
     <body>
-        <div id="vue-app">
-            <div id="bag" v-bind:class="{ burst: isActive }"></div>
-
-            <div id="bag-health">
-                <div :style="{width: health + '%'}"></div>
-            </div>
-            <div id="controls">
-                <button v-show="!isActive" v-on:click="Punch">Punch</button>
-                <button v-on:click="Reset">Reset</button>
-            </div>
+        <div id="vue-app-one">
+            <h1>{{ title }}</h1>            
+            <h1>{{ name }}</h1>
+            <h1>{{ comp }}</h1>
+        </div>
+        <div id="vue-app-two">
+            <h1>{{ title }}</h1>
+            <h1>{{ name }}</h1>
+            <h1>{{ comp }}</h1>
+            <button v-on:click="channgeTitle">Ch 1</button>
         </div>
     </body>
     <script src="app.js"></script>

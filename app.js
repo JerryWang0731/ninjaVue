@@ -1,20 +1,36 @@
-new Vue({
-    el: "#vue-app",
+var one = new Vue({
+    el: "#vue-app-one",
     data: {
-        health: 100,
-        isActive: false,
+        title: "one VueApp",
+        name: "JP"
     },
     methods: {
-        Punch: function(){
-            this.health -= 10;
-            if(this.health <= 0)
-            {
-                this.isActive = true;
-            }
-        },
-        Reset: function(){
-            this.health = 100;
-            this.isActive = false;
+        
+    },
+    computed: {
+        comp: function(){
+            return "one comp VueApp comp" + this.name;
+        }
+    }
+});
+
+var two = new Vue({
+    el: "#vue-app-two",
+    data: {
+        title: "two VueApp",
+        name: "GP"
+    },
+    methods: {
+        channgeTitle: function(){
+            one.title = "you got changed";
+            one.name = "JJ";
+            this.name = "GG la";
         }
     },
+    computed: {
+        comp: function(){
+            return "two comp VueApp comp";
+        }
+    }
 });
+
