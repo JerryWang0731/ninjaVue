@@ -17,12 +17,9 @@
                     <span>NO.{{ idx+1 }} {{ f.name }}- {{ f.status }}</span>
                 </li>
             </ul> -->
-            <template v-for="(f, idx) in friends">
-                <span>NO.{{ idx+1 }} {{ f.name }}- {{ f.status }}</span>
+            <template v-for="(friend, idx) in friends">
+                <p v-for="(k, v) in friend">Key: {{k}}, Value: {{v}}</p>
             </template>
-            <div v-for="(f, idx) in friends">
-                <span>NO.{{ idx+1 }} {{ f.name }}- {{ f.status }}</span>
-            </div>
         </div>
     </body>
     <script src="app.js"></script>
