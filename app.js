@@ -4,8 +4,8 @@ new Vue({
         age: 18,
         x: 0,
         y: 0,
-        available: false,
-        nearby: false
+        error: false,
+        success: false
     },
     methods: {
        

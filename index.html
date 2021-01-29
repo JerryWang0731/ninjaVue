@@ -8,16 +8,12 @@
     
     <body>
         <div id="vue-app">
-            <h1>Dynamic Class</h1>
-            <!-- <div v-on:click="available = !available" v-bind:class="{available: available}">
-                <span>Ryu</span>
-            </div> -->
-            <!-- <span v-on:click="available =! available" v-bind:class="{available: available}">haha</div> -->
-            <button v-on:click="available = !available">AAAA</button>    
-            <button v-on:click="nearby = !nearby">BBBB</button>    
-
-            <div v-bind:class="comClass">
-                <span>haha</span>
+            <h1>V show V if</h1>
+            <button v-on:click="error = !error">AAAA</button>    
+            <button v-on:click="success = !success">BBBB</button>  
+            <div>
+                <span v-if="error">you got error</span>
+                <span v-if="success">you will be success</span>
             </div>
         </div>
     </body>
