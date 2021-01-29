@@ -7,11 +7,9 @@
     </head>
     
     <body>
-        <div id="vue-app-one">
-            <first-component></first-component>
-        </div>
-        <div id="vue-app-two">            
-            <first-component></first-component>
+        <div id="vue-app">
+            <input type="text" ref="jerryRef"></input>
+            <button v-on:click="sayGetName">sayGetName</button>            
         </div>
     </body>
     <script src="app.js"></script>
