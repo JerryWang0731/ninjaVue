@@ -5,7 +5,8 @@ new Vue({
         x: 0,
         y: 0,
         error: false,
-        success: false
+        success: false,
+        isholiday: false,
     },
     methods: {
        

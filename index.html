@@ -8,12 +8,14 @@
     
     <body>
         <div id="vue-app">
-            <h1>V show V if</h1>
-            <button v-on:click="error = !error">AAAA</button>    
-            <button v-on:click="success = !success">BBBB</button>  
+            <h1>V-show V-if</h1>
+            <button v-on:click="error = !error">error</button>    
+            <button v-on:click="success = !success">success</button>  
+            <button v-on:click="isholiday = !isholiday">isholiday</button>  
             <div>
                 <span v-if="error">you got error</span>
-                <span v-if="success">you will be success</span>
+                <span v-if="isholiday">hahahah holiday</span>
+                <span v-else-if="success">you will be success</span>
             </div>
         </div>
     </body>
