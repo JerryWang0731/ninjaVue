@@ -9,7 +9,10 @@
     <body>
         <div id="vue-app">
             <h1>Dynamic Class</h1>
-            <div v-on:click="isRed=!isRed" v-bind:class="{red:isRed}">haha</div>
+            <div v-on:click="available = !available" v-bind:class="{available: available}">
+                <span>Ryu</span>
+            </div>
+            <span v-on:click="available =! available" v-bind:class="{available: available}">haha</div>
         </div>
     </body>
     <script src="app.js"></script>

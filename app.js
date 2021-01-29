@@ -4,7 +4,7 @@ new Vue({
         age: 18,
         x: 0,
         y: 0,
-        isRed: false,
+        available: true,
     },
     methods: {
        
