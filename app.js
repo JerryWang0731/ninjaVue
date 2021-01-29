@@ -34,3 +34,4 @@ var two = new Vue({
     }
 });
 
+two.title = "u will be my shape";
