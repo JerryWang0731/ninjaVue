@@ -8,13 +8,8 @@
     
     <body>
         <div id="vue-app">
-            <h1>computed demo</h1>
-            <span>Age: {{ age }}</span>
-            <button v-on:click="x++">Add x</button>
-            <button v-on:click="y++">Add y</button>
-            <span>addX: {{ addX }}</span>
-            <span>addY: {{ addY }}</span>
-            <span>addXY: {{ addXY  }}</span>
+            <h1>Dynamic Class</h1>
+            <div v-on:click="isRed=!isRed" v-bind:class="{red:isRed}">haha</div>
         </div>
     </body>
     <script src="app.js"></script>
