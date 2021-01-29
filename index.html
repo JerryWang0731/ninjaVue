@@ -13,9 +13,9 @@
             <button v-on:click="success = !success">success</button>  
             <button v-on:click="isholiday = !isholiday">isholiday</button>  
             <div>
-                <span v-if="error">you got error</span>
-                <span v-if="isholiday">hahahah holiday</span>
-                <span v-else-if="success">you will be success</span>
+                <span v-show="error">you got error</span>
+                <span v-show="isholiday">hahahah holiday</span>
+                <span v-show="success">you will be success</span>
             </div>
         </div>
     </body>
