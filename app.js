@@ -1,19 +1,20 @@
 new Vue({
     el: "#vue-app",
     data: {
-        ninjaName: "",
-        name: "jerry",
-        hobby: ["game", "gym", "netflix"],
-        friends: [
-            { name:"lynn", status:"tricky" },
-            { name:"rin",  status:"not sure" },
-            { name:"evan", status:"some worry" }
-        ]
+        health: 100,
+        isActive: false,
     },
     methods: {
-       
+        Punch: function(){
+            this.health -= 10;
+            if(this.health <= 0)
+            {
+                this.isActive = true;
+            }
+        },
+        Reset: function(){
+            this.health = 100;
+            this.isActive = false;
+        }
     },
-    computed: {
-
-    }
 });

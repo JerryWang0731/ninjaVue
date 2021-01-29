@@ -8,9 +8,15 @@
     
     <body>
         <div id="vue-app">
-            <h1>two way binding</h1>
-            <label for="ninjaName">Name:</label><input v-model="ninjaName" type="text" id="ninjaName">
-            <span>{{ ninjaName }}</span>
+            <div id="bag" v-bind:class="{ burst: isActive }"></div>
+
+            <div id="bag-health">
+                <div :style="{width: health + '%'}"></div>
+            </div>
+            <div id="controls">
+                <button v-show="!isActive" v-on:click="Punch">Punch</button>
+                <button v-on:click="Reset">Reset</button>
+            </div>
         </div>
     </body>
     <script src="app.js"></script>
