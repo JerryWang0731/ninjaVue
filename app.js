@@ -4,12 +4,19 @@ new Vue({
         age: 18,
         x: 0,
         y: 0,
-        available: true,
+        available: false,
+        nearby: false
     },
     methods: {
        
     },
     computed: {
+        comClass: function(){
+            return {
+                available: this.available,
+                nearby: this.nearby,
+            }
+        },
         addX: function(){
             console.log('trigger X');
             return this.x + this.age;
