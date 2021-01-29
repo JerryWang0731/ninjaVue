@@ -1,8 +1,27 @@
+var dataObject = {
+    count: 0,
+    title: "from component"
+};
+
+
+Vue.component('first-component', {
+    template: '<div><p>wasa: {{ title }} </p> <button v-on:click="count++">You clicked me {{ count }} times.</button></div>',
+    data: function () {
+      return dataObject;
+    },
+    methods: {
+        // addCount: function()
+        // {
+        //     this.count++;
+        // }
+    },
+  })
+
+
 var one = new Vue({
     el: "#vue-app-one",
     data: {
         title: "one VueApp",
-        name: "JP"
     },
     methods: {
         
@@ -18,7 +37,6 @@ var two = new Vue({
     el: "#vue-app-two",
     data: {
         title: "two VueApp",
-        name: "GP"
     },
     methods: {
         channgeTitle: function(){
