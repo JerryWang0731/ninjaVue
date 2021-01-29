@@ -1,6 +1,7 @@
 new Vue({
     el: "#vue-app",
     data: {
+        ninjaName: "",
         name: "jerry",
         hobby: ["game", "gym", "netflix"],
         friends: [

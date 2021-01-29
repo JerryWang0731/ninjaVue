@@ -8,18 +8,9 @@
     
     <body>
         <div id="vue-app">
-            <span>first: {{ hobby[0] }} </span>
-            <ul>
-                <li v-for="(h, idx) in hobby">{{ idx+1 }} - {{ h }}</li>
-            </ul>            
-            <!-- <ul>
-                <li v-for="(f, idx) in friends">
-                    <span>NO.{{ idx+1 }} {{ f.name }}- {{ f.status }}</span>
-                </li>
-            </ul> -->
-            <template v-for="(friend, idx) in friends">
-                <p v-for="(k, v) in friend">Key: {{k}}, Value: {{v}}</p>
-            </template>
+            <h1>two way binding</h1>
+            <label for="ninjaName">Name:</label><input v-model="ninjaName" type="text" id="ninjaName">
+            <span>{{ ninjaName }}</span>
         </div>
     </body>
     <script src="app.js"></script>
