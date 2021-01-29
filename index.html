@@ -8,15 +8,15 @@
     
     <body>
         <div id="vue-app">
-            <h1>V-show V-if</h1>
-            <button v-on:click="error = !error">error</button>    
-            <button v-on:click="success = !success">success</button>  
-            <button v-on:click="isholiday = !isholiday">isholiday</button>  
-            <div>
-                <span v-show="error">you got error</span>
-                <span v-show="isholiday">hahahah holiday</span>
-                <span v-show="success">you will be success</span>
-            </div>
+            <ul>
+                <li v-for="h in hobby">{{ h }}</li>
+            </ul>
+            <ul>
+                <li v-for="f in friends">
+                    <span>{{ f.name }}</span>
+                    <span>{{ f.status }}</span>
+                </li>
+            </ul>
         </div>
     </body>
     <script src="app.js"></script>
