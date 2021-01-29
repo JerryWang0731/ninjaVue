@@ -8,15 +8,21 @@
     
     <body>
         <div id="vue-app">
+            <span>first: {{ hobby[0] }} </span>
             <ul>
-                <li v-for="h in hobby">{{ h }}</li>
-            </ul>
-            <ul>
-                <li v-for="f in friends">
-                    <span>{{ f.name }}</span>
-                    <span>{{ f.status }}</span>
+                <li v-for="(h, idx) in hobby">{{ idx+1 }} - {{ h }}</li>
+            </ul>            
+            <!-- <ul>
+                <li v-for="(f, idx) in friends">
+                    <span>NO.{{ idx+1 }} {{ f.name }}- {{ f.status }}</span>
                 </li>
-            </ul>
+            </ul> -->
+            <template v-for="(f, idx) in friends">
+                <span>NO.{{ idx+1 }} {{ f.name }}- {{ f.status }}</span>
+            </template>
+            <div v-for="(f, idx) in friends">
+                <span>NO.{{ idx+1 }} {{ f.name }}- {{ f.status }}</span>
+            </div>
         </div>
     </body>
     <script src="app.js"></script>
