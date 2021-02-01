@@ -2,6 +2,8 @@
   <div>
     <app-header></app-header>
     <app-ninja v-bind:ninjas="ninjas"></app-ninja>
+    <hr>
+    <app-ninja v-bind:ninjas="ninjas"></app-ninja>
     <app-footer></app-footer>
   </div>
 </template>
