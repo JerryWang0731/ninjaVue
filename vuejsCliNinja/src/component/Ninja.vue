@@ -1,6 +1,5 @@
 <template> 
   <div id="ninjas">
-    <span>{{ ninjas }}</span>
     <ul>
         <li v-on:click="ninja.show = !ninja.show" v-for="ninja in ninjas">
           <h2>{{ ninja.name }}</h2>
