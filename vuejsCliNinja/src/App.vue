@@ -1,30 +1,30 @@
 <template>
   <div>
-    <h1>{{ title }}</h1>
-    <button v-on:click="greeting()">say some thing nice</button>
-    <ninja></ninja>  
-  
+    <app-header></app-header>
+    <app-ninja></app-ninja>
+    <app-footer></app-footer>
   </div>
-  
 </template>
 
 <script>
+import Ninja from './component/Ninja.vue';
+import Header from './Component/Header.vue';
+import Footer from './Component/Footer.vue';
+
+
 export default {
-  data() {
-    return {
-      title: "my root component",
-    };
+  components:{
+    'app-header':Header,
+    'app-footer':Footer,
+    'app-ninja':Ninja,
+  },
+  Ninjadata() {
+    return {};
   },
   methods: {
-    greeting() {
-      alert("hello");
-    },
   },
 };
 </script>
 
 <style scoped>
-h1 {
-  color: green;
-}
 </style>
