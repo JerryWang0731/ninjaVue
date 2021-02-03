@@ -2,7 +2,7 @@
   <div>
     <app-header v-bind:title="title"></app-header>
     <app-ninja v-bind:ninjas="ninjas"></app-ninja>
-    <app-footer v-bind:title="title"></app-footer>
+    <app-footer v-bind:title="title" v-on:chgTitleEvent="chgTitleByFooter($event)"></app-footer>
   </div>
 </template>
 
@@ -32,6 +32,9 @@ export default {
     };
   },
   methods: {
+    chgTitleByFooter (updTitle){
+      this.title = updTitle;
+    }
   },
 };
 </script>
