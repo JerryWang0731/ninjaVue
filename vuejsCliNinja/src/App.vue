@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import Ninja from './component/Ninja.vue';
-import Header from './Component/Header.vue';
-import Footer from './Component/Footer.vue';
+import Ninja from './components/Ninja.vue';
+import Header from './components/Header.vue';
+import Footer from './components/Footer.vue';
 
 
 export default {
