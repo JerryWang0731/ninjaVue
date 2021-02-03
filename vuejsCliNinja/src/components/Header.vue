@@ -14,12 +14,12 @@ export default {
   },
   data() {
     return {
-      title: "my root component",
+     
     };
   },
   methods: {
     changeTitle(){
-      this.title = 'NoNooooo';
+      this.title = "hohohoh";
     }
   },
 };
