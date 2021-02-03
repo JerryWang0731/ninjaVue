@@ -1,6 +1,6 @@
 <template>
    <footer>
-      <p v-on:click="changeTitle">{{ copyright }}-{{ title }}</p>
+      <p>{{ copyright }}-{{ title }}</p>
   </footer>
 </template>
 
@@ -18,9 +18,6 @@ export default {
     };
   },
   methods: {
-    changeTitle(){
-      this.$emit('chgTitleEvent', 'footer Title');
-    }
   },
 };
 </script>

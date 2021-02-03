@@ -19,7 +19,7 @@ export default {
   },
   methods: {
     changeTitle(){
-      this.title = "hohohoh";
+      this.$emit('chgTitleEvent', 'child Title');
     }
   },
 };
